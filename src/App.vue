@@ -14,16 +14,18 @@ import { defineComponent, ref } from 'vue';
 import MyMovie from '@/components/MyMovie.vue';
 import MyCard from '@/components/MyCard.vue';
 import Grey from '@/components/Grey.vue';
+import MyPhoto from '@/components/MyPhtot.vue'
 export default defineComponent({
   name: 'App',
   components: {
     MyMovie,
     MyCard,
     Grey,
+    MyPhoto,
   },
   setup() {
     let tab = ref(0);
-    let arr: Array<string> = ['MyMovie', 'MyCard', 'Grey'];
+    let arr: Array<string> = ['MyMovie', 'MyCard', 'Grey', 'MyPhoto'];
     const changeTab = (i: number) => {
       tab.value = i;
       if (i === 2) {
