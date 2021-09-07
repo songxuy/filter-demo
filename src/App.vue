@@ -14,7 +14,7 @@ import { defineComponent, ref } from 'vue';
 import MyMovie from '@/components/MyMovie.vue';
 import MyCard from '@/components/MyCard.vue';
 import Grey from '@/components/Grey.vue';
-import MyPhoto from '@/components/MyPhtot.vue'
+import MyPhoto from '@/components/MyPhtot.vue';
 export default defineComponent({
   name: 'App',
   components: {
