@@ -25,11 +25,11 @@ export default {
   position: relative;
   width: 100%;
   height: calc(100vh - 57px);
-  background-color: #EEEDDB;
+  background-color: #eeeddb;
   .title {
     position: relative;
     font-size: 30px;
-    color: #6C5D4B;
+    color: #6c5d4b;
     padding: 30px 80px;
     font-weight: bold;
   }
