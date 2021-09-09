@@ -5,6 +5,8 @@
       <p :class="tab === 1 ? 'active' : ''" @click="changeTab(1)">Demo2</p>
       <p :class="tab === 2 ? 'active' : ''" @click="changeTab(2)">Demo3</p>
       <p :class="tab === 3 ? 'active' : ''" @click="changeTab(3)">Demo4</p>
+      <p :class="tab === 4 ? 'active' : ''" @click="changeTab(4)">Demo5</p>
+      <p :class="tab === 5 ? 'active' : ''" @click="changeTab(5)">Demo6</p>
     </div>
     <component :is="arr[tab]"></component>
   </div>
@@ -15,6 +17,8 @@ import MyMovie from '@/components/MyMovie.vue';
 import MyCard from '@/components/MyCard.vue';
 import Grey from '@/components/Grey.vue';
 import MyPhoto from '@/components/MyPhtot.vue';
+import Loading from '@/components/Loading.vue';
+import Shake from '@/components/Shake.vue';
 export default defineComponent({
   name: 'App',
   components: {
@@ -22,10 +26,12 @@ export default defineComponent({
     MyCard,
     Grey,
     MyPhoto,
+    Loading,
+    Shake,
   },
   setup() {
     let tab = ref(0);
-    let arr: Array<string> = ['MyMovie', 'MyCard', 'Grey', 'MyPhoto'];
+    let arr: Array<string> = ['MyMovie', 'MyCard', 'Grey', 'MyPhoto', 'Loading', 'Shake'];
     const changeTab = (i: number) => {
       tab.value = i;
       if (i === 2) {
