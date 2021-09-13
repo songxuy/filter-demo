@@ -38,6 +38,7 @@ export default {
       background: #1aa7ff;
       border-radius: 50%;
       position: absolute;
+      left: 25%;
       filter: blur(20px); //子元素设置blur
       transform: scale(0.1);
       transform-origin: left top;
